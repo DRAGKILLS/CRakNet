@@ -1,7 +1,7 @@
 #include "ServerName.h"
 
 char setName(char Name) {
-	_ServerName[50] = Name;
+	_ServerName[40] = Name;
 	return Name;
 }
 
@@ -10,7 +10,7 @@ char getName() {
 }
 
 char setMotd(char Motd) {
-	_ServerMotd[50] = Motd;
+	_ServerMotd[40] = Motd;
 	return Motd;
 }
 
