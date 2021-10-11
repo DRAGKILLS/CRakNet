@@ -1,10 +1,9 @@
 #pragma once
 
-typedef char things[50];
+typedef char things[40];
 
 things _ServerName = "CRakNet";
 things _ServerMotd = "World";
-
 
 char getMotd();
 char setMotd(char Motd);
