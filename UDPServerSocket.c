@@ -1,6 +1,6 @@
 #include "UDPServerSocket.h"
 
-int set_nonblocking_socket(int fd, int nonblocking)
+set_nonblocking_socket(int fd, int nonblocking)
 {
 	if (fd < 0)
 	{
