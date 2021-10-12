@@ -37,7 +37,7 @@ create_socket(char *Address, int Port) {
 	s_address.sin_addr.s_addr = inet_addr(Address);
 	s_address.sin_port = htons(Port);
 	if (bind(getSocket(), (struct sockaddr*)&s_address, sizeof(Address)) < 0) {
-		printf("Cant bind port");
+		printf("Cant bind port\n");
 		exit(EXIT_FAILURE);
 	}
 }
