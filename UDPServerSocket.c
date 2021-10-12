@@ -1,7 +1,7 @@
 #include "UDPServerSocket.h"
 
 
-int UDPServerSocket(char Address, int namelen) {
+int UDPServerSocket(const *char Address, int namelen) {
 	bind(getSocket(), Address, namelen);
 }
 
