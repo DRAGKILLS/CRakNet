@@ -20,7 +20,7 @@ set_nonblocking_socket(int fd, int nonblocking)
 #endif
 }
 
-create_socket(char *Address, int Port) {
+create_socket(char* Address, int Port) {
 #ifdef _WIN32
 	WSADATA wsa;
 	if (WSAStartup(MAKEWORD(2, 2), &wsa) != 0) {
