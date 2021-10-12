@@ -46,8 +46,8 @@ getSocket() {
 	return socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP);
 }
 
-sendBuffer(char buffer, int len, int flags) {
-	send(getSocket(), buffer, len, flags);
+sendBuffer(char buffer, int length, int flags) {
+	send(getSocket(), buffer, length, flags);
 }
 
 close() {
