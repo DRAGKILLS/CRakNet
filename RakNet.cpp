@@ -2,7 +2,7 @@
 #include <Windows.h>
 #include <stdlib.h>
 
-char VERISON[] = "1.0";
+char VERSION[] = "1.0";
 static int PROTOCOL = 10;
 static byte FLAG_NEED_ACK = 0x08;
 static int PRIORITY_NORMAL = 0;
