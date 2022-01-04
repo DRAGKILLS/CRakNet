@@ -1,19 +1,19 @@
 #include "ServerName.h"
 
 char setName(char Name) {
-	_ServerName[40] = Name;
-	return Name;
+    ServerName[99] = Name;
+    return Name;
 }
 
 char getName() {
-	return _ServerName;
+    return reinterpret_cast<char>(ServerName[99]);
 }
 
 char setMotd(char Motd) {
-	_ServerMotd[40] = Motd;
-	return Motd;
+    ServerMotd[99] = Motd;
+    return Motd;
 }
 
 char getMotd() {
-	return _ServerMotd;
+    return reinterpret_cast<char>(ServerMotd[99]);
 }
